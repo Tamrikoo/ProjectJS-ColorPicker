@@ -1,0 +1,74 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand:700);
+*,*:after,*:before{
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+html,body{
+  height:100%;
+  font-family: 'Quicksand', sans-serif;
+}
+body{
+  margin:0;
+  padding:0;
+  position:relative;
+  background: linear-gradient(to top, #faf7f7, #22142b);
+  transition:all 2s ease;
+  overflow:hidden;
+  outline:none;
+  user-select:none;
+}
+
+button {
+    background: #b5bdc8;
+    background: linear-gradient(to top, #b5bdc8 0%, #828c95 36%, #28343b 100%);
+    font-size: 16px;
+    padding: 10px 20px;
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 40px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0 auto;
+    font-size: 50px;
+ }
+
+button:hover {
+   border-top-color: #4e4569;
+   background: linear-gradient(to top, #b5bdc8 0%, #828c95 36%, #191970 100%);
+   color: #87CEEB;
+   }
+
+
+@media (min-width:300px){
+  body{
+  height:85%;
+  }
+  button{
+    top: 20%;
+    left: 1%;
+    font-size: 30px;
+    padding: 10px;
+  }
+}
+
+@media (min-width:400px){
+  body{
+  height:85%;
+  }
+  button{
+    top: 25%;
+    left: 5%;
+  }
+}
+@media (min-width:1024px){
+  body{
+  height:80%;
+  }
+  button{
+    top: 50%;
+    left: 30%;
+  }
+}
