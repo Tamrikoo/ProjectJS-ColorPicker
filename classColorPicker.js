@@ -52,7 +52,7 @@ class ColorPicker extends HTMLElement {
               $[1]+','+
               $[2]+')</span>';
             // place chosen color as body background
-            document.body.style.background =`linear-gradient( to top, #faf7f7,${this.rgbToHex($[0],$[1],$[2])}`;
+            document.body.style.background =`linear-gradient( to top, ${this.rgbToHex($[0],$[1],$[2])},#faf7f7`;
             label.style.background=btn2.style.background=btn.style.background=`linear-gradient(to top, #C0C0C0, ${this.rgbToHex($[0],$[1],$[2])}`
             localStorage.setItem("selectedColor", `${this.rgbToHex($[0],$[1],$[2])}` )
           }.bind(this));
